@@ -1,0 +1,30 @@
+-Estrutura dos testes-
+-Nome
+ Tem o mesmo nome da classe ts, porém com o adicional de .spec
+Exemplo: Teste.ts >seu arquivo de teste> teste.spec.ts;
+-Estrutura padrão
+	  //primeiro uma string	            //depois uma function
+ describe("escrevemos que vai ser testado", function() {
+
+	var a;
+	//variável
+
+}	
+ it("então geramos a spec", function(){
+  
+ 	a = true;
+	//determinamos a condição esperada
+
+ expect(a).toBe(true);
+ //o expect busca a condição a ser testada
+
+	)}
+  )};
+
+Done() => Sinaliza se o código acabou 
+
+
+----------------
+Se eu quiser ter um relatorio de teste visual, eu adiciono esse codigo no package.json do meu projeto e executo npm run test-coverage, ele irá gerar um arquivo index.html
+
+"test-coverage": "ng test --watch=false --sourceMap=true --codeCoverage=true --browsers ChromeHeadless",
