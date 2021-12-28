@@ -7,10 +7,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { SharedModule } from './shared/shared.module';
 import { PostsModule } from './posts/posts.module';
+import { FormComponent } from './teste/form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FormComponent,
     
   ],
   imports: [

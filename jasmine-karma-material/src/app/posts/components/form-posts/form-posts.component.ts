@@ -32,6 +32,7 @@ export class FormPostsComponent implements OnInit {
     this.createForm();
 
   }
+ 
 
   private getRandomInt(){
     return Math.floor(Math.random() * 100);

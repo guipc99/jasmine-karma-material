@@ -14,4 +14,9 @@ export class PostService {
   getAll(){
     return this.http.get<PostModel[]>(this.urlApi);
   }
+  soma(n1:number, n2:number){
+    return n1+n2;
+    
+
+  }
 }

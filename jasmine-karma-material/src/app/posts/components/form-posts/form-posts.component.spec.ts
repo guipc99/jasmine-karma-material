@@ -51,7 +51,7 @@ describe('FormPostsComponent', () => {
     let fieldControl = component.form.controls['title'];
 
     expect(fieldControl.valid).toBeFalsy();
-
+       
     let e = fieldControl.errors || {} ;
     expect(e['required']).toBeTruthy();
 
